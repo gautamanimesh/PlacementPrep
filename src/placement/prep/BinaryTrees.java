@@ -131,6 +131,16 @@ public class BinaryTrees {
         return new TreeInfo(myHeight, myDiam);
     }
 
+    public static void printLeafNodes (Node root) {
+        if (root == null) {
+            return;
+        }
+
+        if (root.left == null && root.right == null) System.out.print(root.data + " ");
+        if (root.left != null) printLeafNodes(root.left);
+        if (root.right != null) printLeafNodes(root.right);
+    }
+
     public static void main(String[] args) {
         int[] nodes = new int[]{1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
         Node root = BinaryTree.buildTree(nodes);
@@ -152,5 +162,8 @@ public class BinaryTrees {
         System.out.print("Height: " + heightOfTree(root));
         System.out.println("");
         System.out.print("Diameter: " + diameterOfTree(root).diam);
+        System.out.println("");
+        System.out.print("Leaf Nodes: ");
+        printLeafNodes(root);
     }
 }
