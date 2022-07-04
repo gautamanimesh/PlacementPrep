@@ -41,9 +41,8 @@ public class SumOfNodesAtKthLevel {
 
         while (!q.isEmpty()) {
             int size = q.size();
-            while (size > 0) {
+            while (size-- > 0) {
                 Node currNode = q.remove();
-                size--;
                 if (counter == level) {
                     flag = 1;
                     sum += currNode.data;

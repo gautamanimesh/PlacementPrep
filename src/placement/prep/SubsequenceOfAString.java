@@ -6,13 +6,11 @@ public class SubsequenceOfAString {
 
     public static void subsequencesOfAString (String str, int idx, String newString, HashSet<String> set) { // unique
         if (idx == str.length()) {
-            if (set.contains(newString)) {
-                return;
-            } else {
+            if (!set.contains(newString)) {
                 System.out.println(newString);
                 set.add(newString);
-                return;
             }
+            return;
         }
         char currChar = str.charAt(idx);
         //to be
