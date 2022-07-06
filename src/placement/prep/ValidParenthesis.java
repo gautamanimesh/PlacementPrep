@@ -15,7 +15,9 @@ public class ValidParenthesis {
                     return false;
                 } else {
                     char top = s.peek();
-                    if (ch == '}' && top == '{' || ch == ']' && top == '[' || ch == ')' && top == '(') {
+                    if (ch == '}' && top == '{' ||
+                        ch == ']' && top == '[' ||
+                        ch == ')' && top == '(') {
                         s.pop();
                     } else {
                         return false;
