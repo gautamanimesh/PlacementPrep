@@ -1,6 +1,7 @@
 package placement.prep;
 
 public class RotatedSortedArray {
+    // Leetcode
     public static int findPivot (int[] arr) {
         int start = 0;
         int end = arr.length-1;
@@ -38,6 +39,7 @@ public class RotatedSortedArray {
     public static int search(int[] arr, int target) {
         int pivot = findPivot(arr);
         if (pivot == -1) {
+            // arr is sorted!
             return binarySearch(arr,0,arr.length-1,target);
         }
         if (target == arr[pivot]) {
