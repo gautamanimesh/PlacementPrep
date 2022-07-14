@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class BinaryTrees {
+    // Time Complexity: O(n) | where, n is the number of nodes.
     static class Node {
         private int data;
         private Node left;
