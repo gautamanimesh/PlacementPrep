@@ -29,7 +29,7 @@ public class LinkedListPalindrome {
     }
 
     private static Node findMiddle (Node node) {
-        // this approach finds out the first middle.
+        // this approach finds out the first middle. (in some situations, there can be 2 middle elements.)
         Node slow = node;
         Node fast = node;
 

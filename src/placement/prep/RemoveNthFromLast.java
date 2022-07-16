@@ -27,6 +27,8 @@ public class RemoveNthFromLast {
             return head.next;
         }
 
+        if (n == 0) return head;
+
         int prevNodeIndex = size - n;
         Node prevNode = head;
         int i = 1;

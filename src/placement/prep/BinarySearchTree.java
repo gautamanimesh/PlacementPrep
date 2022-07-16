@@ -3,17 +3,17 @@ package placement.prep;
 import java.util.ArrayList;
 
 public class BinarySearchTree {
-    /*
-     * Time Complexity: O(H) // H is height of the tree.
-     * Generally, in case of Binary Trees, H is log(n).
-     * Left SubTree nodes are lesser than root node.
-     * Right SubTree nodes are greater than root node.
-     * Left & Right SubTrees are also BST with no duplicates.
-     * In-order traversal of BST gives a sorted sequence. // IMP
-     * BST makes search efficient.
-     * Recursion solves most problems.
-     */
-    private static class Node {
+        /*
+         * Time Complexity: O(H) // H is height of the tree.
+         * Generally, in case of Binary Trees, H is log(n).
+         * Left SubTree nodes are lesser than root node.
+         * Right SubTree nodes are greater than root node.
+         * Left & Right SubTrees are also BST with no duplicates.
+         * In-order traversal of BST gives a sorted sequence. // IMP
+         * BST makes search efficient.
+         * Recursion solves most problems.
+         */
+        private static class Node {
          int data;
          Node left;
          Node right;
@@ -43,7 +43,7 @@ public class BinarySearchTree {
         inorder(root.right);
     }
 
-    private static boolean search (Node root, int val) {  // O(H)
+    private static boolean search (Node root, int val) {  // O(H) :: H is height of the tree.
          if (root == null) return false;
          if (root.data == val) return true;
 
