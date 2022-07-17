@@ -5,7 +5,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 public class BipartiteGraph {
-
     /*
     * Bipartite Graph: A graph that can be colored using two colors such that no two
       adjacent nodes have the same color.
@@ -15,7 +14,6 @@ public class BipartiteGraph {
     * Auxiliary Space: O(N)
     * DFS implementation.
     */
-
     private static boolean isBipartite (int n, int[][] edges) {
         int[] color = new int[n];
         Arrays.fill(color, -1);
