@@ -1,6 +1,7 @@
 package placement.prep;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Stack;
 
@@ -65,8 +66,6 @@ public class TopologicalSort_DFS {
         };
         int n = 4;
         int[] ans = topoSort_DFS(n, edges);
-        for (int element: ans) {
-            System.out.print(element + " ");
-        }
+        System.out.println(Arrays.toString(ans));
     }
 }

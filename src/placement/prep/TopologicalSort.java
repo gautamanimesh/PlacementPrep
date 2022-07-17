@@ -1,9 +1,6 @@
 package placement.prep;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class TopologicalSort {
     /*
@@ -66,8 +63,6 @@ public class TopologicalSort {
         }
 
         int[] ans = topoSort_BFS(n, adj);
-        for (Integer element: ans) {
-            System.out.print(element + " ");
-        }
+        System.out.println(Arrays.toString(ans));
     }
 }
