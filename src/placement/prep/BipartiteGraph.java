@@ -24,9 +24,9 @@ public class BipartiteGraph {
             map.put(i, new ArrayList<>());
         }
 
-        for (int i = 0; i < edges.length; i++) {
-            map.get(edges[i][0]).add(edges[i][1]);
-            map.get(edges[i][1]).add(edges[i][0]);
+        for (int[] edge : edges) {
+            map.get(edge[0]).add(edge[1]);
+            map.get(edge[1]).add(edge[0]);
         }
 
         for (int i = 0; i < n; i++) {
