@@ -21,6 +21,12 @@ public class BitwiseOperators {
      * a >> b = a  /(2^b)
      */
 
+    /*
+    * XOR:
+    * a ^ 1 = ~a
+    * a ^ 0 = a
+    */
+
     // Ques1: Odd-Even
     private static boolean isOdd (int n) {
         return (n & 1) == 1;
@@ -86,6 +92,50 @@ public class BitwiseOperators {
         return (int)(Math.log(num) / Math.log(base)) + 1;
     }
 
+    private static boolean powOfTwo(int num) {
+        if (num == 0) return false;
+        return (num & (num-1)) == 0;
+    }
+
+    private static int power(int power, int base) {
+        int ans = 1;
+        while (power > 0) {
+            if ((power & 1) == 1) {
+                ans *= base;
+            }
+
+            base *= base;
+            power = power >> 1;
+        }
+        return ans;
+    }
+
+    private static int countSetBits (int n) {
+        int ans = 0;
+        while (n > 0) {
+            n = n & (n-1);
+            // n -= (n & -n);
+            ans++;
+        }
+        return ans;
+    }
+
+    private static int xorTillA (int a) {
+        if (a % 4 == 0) return a;
+        else if (a % 4 == 1) {
+            return 1;
+        } else if (a % 4 == 2) {
+            return a+1;
+        } else {
+            return 0;
+        }
+    }
+
+    private static int rangeXOR(int a, int b) {
+        // rangeXOR for a, b = xor(b) ^ xor(a-1)
+        return xorTillA(b) ^ xorTillA(a-1);
+    }
+
     public static void main(String[] args) {
         int num = 13;
         System.out.println(isOdd(num));
@@ -107,5 +157,11 @@ public class BitwiseOperators {
 
         int d = 34567, base = 10;
         System.out.println(noOfDigitsInBaseB(d, base));
+
+        System.out.println(powOfTwo(32));
+
+        System.out.println(power(3,4));
+
+        System.out.println(countSetBits(10));
     }
 }
