@@ -1,5 +1,7 @@
 package placement.prep;
 
+import java.util.Arrays;
+
 public class FlipImage {
     // Time Complexity: O(N)
     // Space Complexity: O(1)
@@ -24,5 +26,8 @@ public class FlipImage {
                 {0, 0, 0}
         };
         int[][] ans = flipImage(image);
+        for (int[] edge: ans) {
+            System.out.println(Arrays.toString(edge));
+        }
     }
 }
