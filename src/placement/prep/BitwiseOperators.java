@@ -10,7 +10,7 @@ public class BitwiseOperators {
     /*
      * Left Shift: [ << ]
      * Left shift doubles the number.
-     * a << 1 = 2*a
+     * a << 1 = 2 * a
      * a << b = (2^b) * a
      */
 
