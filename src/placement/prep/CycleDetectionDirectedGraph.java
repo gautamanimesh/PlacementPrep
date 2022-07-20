@@ -15,8 +15,8 @@ public class CycleDetectionDirectedGraph {
             map.put(i, new ArrayList<Integer>());
         }
 
-        for (int i = 0; i < edges.length; i++) {
-            map.get(edges[i][0]).add(edges[i][1]);
+        for (int[] edge : edges) {
+            map.get(edge[0]).add(edge[1]);
         }
 
         for (int i = 1; i <= n; i++) {

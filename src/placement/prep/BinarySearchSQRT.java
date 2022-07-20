@@ -15,7 +15,6 @@ public class BinarySearchSQRT {
             if (mid * mid == n) {
                 root = mid;
             }
-
             if (mid * mid > n) {
                 end = mid - 1;
             } else {
