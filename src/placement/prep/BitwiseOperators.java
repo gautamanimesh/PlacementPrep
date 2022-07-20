@@ -18,7 +18,7 @@ public class BitwiseOperators {
      * Right Shift: [ >> ]
      * Right shift halves the number.
      * a >> 1 = a / 2
-     * a >> b = a  /(2^b)
+     * a >> b = a / (2^b)
      */
 
     /*
