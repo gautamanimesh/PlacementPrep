@@ -2,6 +2,7 @@ package placement.prep;
 
 public class NewtonsSQRT {
 
+    // Newton-Raphson Method
     private static double sqrt (int n) {
         double root;
         double x = n;
