@@ -22,10 +22,10 @@ public class BitwiseOperators {
      */
 
     /*
-    * XOR:
-    * a ^ 1 = ~a
-    * a ^ 0 = a
-    */
+     * XOR:
+     * a ^ 1 = ~a
+     * a ^ 0 = a
+     */
 
     // Ques1: Odd-Even
     private static boolean isOdd (int n) {
