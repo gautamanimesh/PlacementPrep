@@ -1,7 +1,5 @@
 package placement.prep;
 
-import java.util.Base64;
-
 public class BitwiseOperators {
     /*
      * AND with 1: The number remains the same.

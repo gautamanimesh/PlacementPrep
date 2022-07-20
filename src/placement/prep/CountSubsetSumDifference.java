@@ -40,6 +40,13 @@ public class CountSubsetSumDifference {
         }
         sum += diff;
         sum /= 2;
+        /*
+         *   s1 - s2 = diff
+         * + s1 + s2 = sum
+         *  2s1      = diff + sum
+         *   s1 = (diff + sum) / 2
+         * apply: countSubsetSum(int[] arr, int s1)
+         */
         System.out.println(countSubsetSumDifference(arr, sum));
     }
 }
