@@ -1,5 +1,7 @@
 package placement.prep;
 
+import javafx.util.Pair;
+
 import java.util.HashSet;
 
 public class SubsequenceOfAString {
