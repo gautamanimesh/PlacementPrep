@@ -37,8 +37,8 @@ public class TopologicalSort_DFS {
             map.put(i, new ArrayList<>());
         }
 
-        for (int i = 0; i < edges.length; i++) {
-            map.get(edges[i][0]).add(edges[i][1]);
+        for (int[] edge : edges) {
+            map.get(edge[0]).add(edge[1]);
         }
 
         for (int i = 0; i < n; i++) {
