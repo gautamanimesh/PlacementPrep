@@ -20,7 +20,7 @@ public class RotationCount {
             if (start < mid && arr[mid-1] > arr[mid]) {
                 return mid-1;
             }
-            if (arr[mid] <= arr[start]) {
+            if (arr[mid] <= arr[start]) { // 3 4 5 6 7 0 1 2
                 end = mid-1;
             } else {
                 start = mid+1;
