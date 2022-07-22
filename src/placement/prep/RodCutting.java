@@ -1,7 +1,8 @@
 package placement.prep;
 
+// Unbounded Knapsack!
 public class RodCutting {
-    // Unbounded Knapsack!
+
     private static int rodCutting (int[] length, int[] price, int N) {
         int n = price.length;
         int[][] t = new int[n+1][N+1];
