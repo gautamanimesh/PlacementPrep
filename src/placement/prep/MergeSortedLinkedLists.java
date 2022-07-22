@@ -67,6 +67,7 @@ public class MergeSortedLinkedLists {
         System.out.println("");
         printLinkedList(N1);
         System.out.println("");
+
         Node mergedList = mergeLists(n1, N1);
         printLinkedList(mergedList);
     }
