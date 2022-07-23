@@ -19,7 +19,7 @@ public class MoveZeroes {
         }
     }
     public static void main(String[] args) {
-        int[] t = {8,1,0,2,1,0,3};
+        int[] t = {8, 1, 0, 2, 1, 0, 3};
         moveZeroes(t);
     }
 }
