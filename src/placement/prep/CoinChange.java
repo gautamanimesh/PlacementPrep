@@ -21,7 +21,7 @@ public class CoinChange {
             for (int j=1; j < sum+1; j++) {
                 int prevIndex = i-1;
                 if (coin[prevIndex] <= j) {
-                    t[i][j] = t[i][j-coin[i-1]] + t[prevIndex][j];
+                    t[i][j] = t[i][j-coin[prevIndex]] + t[prevIndex][j];
                 } else {
                     t[i][j] = t[prevIndex][j];
                 }
