@@ -4,7 +4,10 @@ import java.util.Arrays;
 
 public class QuickSort {
 
-    // Divide and Conquer Algorithm!
+    /* Divide and Conquer Algorithm!
+    * Time Complexity: Worst: O(n^2), Average: O(log(n))
+    * Worst case occurs when pivot is always the smallest or the largest element.
+    */
     private static void quickSort (int[] arr, int low, int high) {
         if (low < high) {
             int pivotIndex = partition(arr, low, high);

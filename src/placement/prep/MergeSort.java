@@ -1,6 +1,11 @@
 package placement.prep;
 
 public class MergeSort {
+
+    /*
+     * Time Complexity: Worst case: O(nlog(n))
+     */
+
     public static void mergeSort (int[] data, int start, int end) {
         if (start < end) {
             int mid = (start + end) / 2;
