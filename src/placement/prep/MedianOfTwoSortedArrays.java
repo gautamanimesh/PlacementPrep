@@ -58,8 +58,10 @@ public class MedianOfTwoSortedArrays {
     public static void main(String[] args) {
         int[] arr1 = {1, 12, 15, 26, 38};
         int[] arr2 = {2, 13, 17, 30, 45};
+
         int n1 = arr1.length;
         int n2 = arr2.length;
+
         if (n1 == n2) {
             System.out.println("Median is: " + median(arr1, arr2, n1));
             System.out.println("Optimized: " + medianOptimized(arr1, arr2, 0, 0, n1-1, n2-1));
