@@ -53,8 +53,6 @@ public class MergeIntervals {
                                         new Interval(8,9),
                                         new Interval(10,12)};
         List<Interval> list = mergeIntervals(arr);
-        for (Interval i: list) {
-            System.out.print(i + " ");
-        }
+        System.out.println(list.toString());
     }
 }
