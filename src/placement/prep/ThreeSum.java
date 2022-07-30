@@ -1,6 +1,5 @@
 package placement.prep;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
@@ -42,7 +41,7 @@ public class ThreeSum {
     }
 
     public static void main(String[] args) {
-        int[] nums = {0,1,1};
+        int[] nums = {-1, 0, 1, 2, -1, -4};
         List<List<Integer>> ans = threeSum(nums);
         System.out.println(ans.toString());
     }
