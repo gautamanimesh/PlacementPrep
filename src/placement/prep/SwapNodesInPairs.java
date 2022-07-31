@@ -1,6 +1,5 @@
 package placement.prep;
 
-import java.util.List;
 
 public class SwapNodesInPairs {
 
