@@ -30,6 +30,7 @@ public class QuickSort {
                 arr[j] = temp;
             }
         }
+        //swap
         i++;
         int temp = arr[i];
         arr[i] = pivot;
