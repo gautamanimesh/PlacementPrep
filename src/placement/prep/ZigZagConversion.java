@@ -27,7 +27,7 @@ public class ZigZagConversion {
     }
 
     public static void main(String[] args) {
-        String str = "ABCDEFGHI";
+        String str = "PQRSTUVWXYZ";
         int nRows = 3;
         System.out.println(convert(str, nRows));
     }
